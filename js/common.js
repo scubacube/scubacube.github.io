@@ -14,6 +14,13 @@ $(function() {
 // 	$(window).resize(function() {
 // 		wResize()
 // 	});
+$(window).scroll(function () {
+	var pos = $(this).scrollTop();
+	$(".top-line, header .container").css({
+		"transform": "translate(0%, -" + pos / 12 + "%"
+	});
+});
+
 
 $(".arrow-bottom").click(function() {
 		$("html, body").animate({ scrollTop: $("header").height()+150 }, "slow");
