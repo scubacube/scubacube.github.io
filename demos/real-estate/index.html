@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Wtch store</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,195 +25,623 @@
 	<meta name="msapplication-navbutton-color" content="#000">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
-	
+
 </head>
 
-<body class="ishome">
-
-	<header class="main-header">
-		<div class="container">
-			<div class="row">
-				
+<body>
+	<header>
+		<section class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
+					</div>
+					<div class="col-md-6">
+						<nav class="nav-menu">
+							<ul>
+								<li><a href="#">Top Sales</a></li>
+								<li><a href="#">Brand Focus</a></li>
+								<li><a href="#">Watches</a></li>
+								<li><a href="#">Best Sellers</a></li>
+								<li><a href="#">Projects</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3">
+						<div class="sign">
+							<a class="cart">
+								<span>cart</span>
+								<span class="cart-count">0</span>
+							</a>
+							<a href="#" class="btn btn-small">sign in</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bottom-line">
+			<div class="container">
+				<div class="bottom-menu">
+					<ul>
+						<li><a href="#">Top Sales</a></li>
+						<li><a href="#">Brand Focus</a></li>
+						<li><a href="#">Watches</a></li>
+						<li><a href="#">Best Sellers</a></li>
+						<li><a href="#">Projects</a></li>
+					</ul>
+				</div>
+				<div class="bottom-search">
+					<div class="search-wrapper">
+						<input type="search" id="search"/>
+						<i class="fa fa-search"></i>
+					</div>
 					
-				<div class="col-md-3 col-xs-6">
-					<div class="logo"><img src="img/logo.png" alt="logo"></div>
-				</div>
-				<div class="mobile-mnu hidden-lg hidden-md col-xs-6 col-xs-push-5">
-						<a href="#" class="toggle-mnu"><span></span></a>
-					</div>
-				<div class="col-md-9 col-md-push-3">
-					<nav class="main-mnu hidden-sm hidden-xs clearfix" style="display: block;">
-						<ul>
-							<li><a href="#">properties</a></li>
-							<li><a href="#">information</a></li>
-							<li><a href="#">contact</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-sm-12">
-					<nav class="main-mnu hidden-mnu hidden-md hidden-lg clearfix" style="display: none;">
-						<ul>
-							<li><a href="#">properties</a></li>
-							<li><a href="#">information</a></li>
-							<li><a href="#">contact</a></li>
-						</ul>
-					</nav>
 				</div>
 			</div>
-		</div>
+		</section>
 	</header>
-	<section class="sect-search">
-		<div class="blur"></div>
-		<div class="container">
-			<div class="row">
-				<div class="inner-wrapper clearfix">
-					<div class="col-md-8 col-md-offset-2">
-						<h1>We specialize in searching real property in Prague suitable for sale and for rent</h1>
-					</div>
-				</div>
-				<div class="sect-search-selectors clearfix">
-					<div class="col-md-3 col-md-offset-1 col-sm-12">
-						<div class="styled-select">
-							<select>
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-12">
-						<div class="styled-select">
-							<select>
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-12">
-						<div class="styled-select last">
-							<select>
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
-							</select>
-						</div>
-						<!--<a href="#" class="button-small">search</a>-->
-					</div>
-				</div>
-			</div>			
-		</div>
-	</section>
-	<section class="f-properties">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Featured Properties to sale</h2>
-				</div>
-				<div class="col-md-4">
-					<div class="f-properties-item clearfix">
-						<a href="#"><div class="f-properties-item-img" style="background-image: url(img/1.jpg);"><i class="fa fa-eye" aria-hidden="true"></i></div></a>
-						<div class="f-properties-item-text clearfix">
-							<div class="f-properties-item-text-description"><a href="#">Sale, apartment 1 bedroom, 66 m2 (Price per property</a></div>
-							<span>6 825 000 CZK</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="f-properties-item">
-						<a href="#"><div class="f-properties-item-img" style="background-image: url(img/2.jpg);"><i class="fa fa-eye" aria-hidden="true"></i></div></a>
-						<div class="f-properties-item-text clearfix">
-							<div class="f-properties-item-text-description"><a href="#">Sale, apartment 1 bedroom, 66 m2 (Price per property</a></div>
-							<span>10 200 000 CZK</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="f-properties-item">
-						<a href="#"><div class="f-properties-item-img" style="background-image: url(img/3.jpg);"><i class="fa fa-eye" aria-hidden="true"></i></div></a>
-						<div class="f-properties-item-text clearfix">
-							<div class="f-properties-item-text-description"><a href="#">Sale, apartment 1 bedroom, 66 m2 (Price per property</a></div>
-							<span>6 274 000 CZK</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="f-properties-item">
-						<a href="#"><div class="f-properties-item-img" style="background-image: url(img/4.jpg);"><i class="fa fa-eye" aria-hidden="true"></i></div></a>
-						<div class="f-properties-item-text clearfix">
-							<div class="f-properties-item-text-description"><a href="#">Sale, apartment 1 bedroom, 66 m2 (Price per property</a></div>
-							<span>5 640 000 CZK</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="f-properties-item">
-						<a href="#"><div class="f-properties-item-img" style="background-image: url(img/5.jpg);"><i class="fa fa-eye" aria-hidden="true"></i></div></a>
-						<div class="f-properties-item-text clearfix">
-							<div class="f-properties-item-text-description"><a href="#">Sale, apartment 1 bedroom, 66 m2 (Price per property</a></div>
-							<span>4 290 000 CZK</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="f-properties-item">
-						<a href="#"><div class="f-properties-item-img" style="background-image: url(img/6.jpg);"><i class="fa fa-eye" aria-hidden="true"></i></div></a>
-						<div class="f-properties-item-text clearfix">
-							<div class="f-properties-item-text-description"><a href="#">Sale, apartment 1 bedroom, 66 m2 (Price per property</a></div>
-							<span>3 514 000 CZK</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 clearfix">
-					<div class="f-properties-button">
-						<a href="#" class="button">More</a>
-					</div>
-				</div>																				
+	<div class="container">
+		<div class="slider-nav-container">
+			<div class="slider-nav">
+				<div class="prev"></div>
+				<div class="next"></div>
 			</div>
 		</div>
-	</section>
-	<section class="contacts">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Contact us if you have any questions</h2>
-				</div>
-				<div class="col-md-5">
-					<div class="contacts-map">
-						<p>Real estate cz Ltd.<br>Uruguayská 78/12<br>120 00 Praha 2 - Vinohrady</p>
-
-						<div id="map">
-							<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAB3KRFMo8B3Su6z3wNXc0LTU_Wz3Q7t-A'></script><div style='overflow:hidden;height:453px;width:100%px;'><div id='gmap_canvas' style='height:453px;width:100%px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://embed-map.org/'>adding a google map to my website</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=a351b56be20cd977375a0b1d7c4f73a45f202ffb'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(50.0735592,14.437627600000042),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.0735592,14.437627600000042)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br>Uruguayská 78/12 120 00 Praha 2 - Vinohrady<br>14900 Prague<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-7">
-					<p>info@realestatecz.com<br>+420 224 947 623<br>+420 774 480 450 (9am - 6pm)<br>+420 775 666 345 (after 6pm)
-					</p>
-					<form action="" class="contact-form">
-						<div class="contact-form-header">Want to contact us now? Just drop us a line below.</div>
-						<label>
-							<div class="contact-form-message">
-								<textarea name="message" placeholder="Leave us a message..."></textarea>
-							</div>
-							<div class="contact-form-email">
-								<div class="row">
-									<div class="col-md-7"><input type="text" name="email" placeholder="your@mail.com"></div>
-									<div class="col-md-5"><a href="#" class="button">SEND</a></div>
-									
+	</div>
+	<section class="slider">				
+						<!-- Slide start -->
+						<div class="slide item">
+							<div class="slide-content">
+								<div class="container">
+									<div class="row">		
+										<div class="col-md-10 col-md-offset-1">								
+											<div class="col-md-6">
+												<div class="item-description">
+													<h1>Galaxy S6 edge smartwatch</h1>
+													<p>Since smartwatches aren't really that useful for much else at this stage, Samsung needs to up its game again. Sammy has been churning out smartwatches since its Gear helped set the trend. But have any of them looked that great?</p>
+													<a href="#" class="btn btn-red">Buy Now</a>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="item-img-wrap">
+													<img src="img/slide-img-1.png" alt="Alt">
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								
 							</div>
-						</label>
-					</form>
+						</div>
+						<!-- Slide end -->
+						<!-- Slide start -->
+						<div class="slide item">
+							<div class="container">
+								<div class="row">										
+									<div class="col-md-5 col-md-offset-1">
+										<div class="item-description">
+											<h1>Galaxy S6 edge smartwatch</h1>
+											<p>Since smartwatches aren't really that useful for much else at this stage, Samsung needs to up its game again. Sammy has been churning out smartwatches since its Gear helped set the trend. But have any of them looked that great?</p>
+											<a href="#" class="btn btn-red">Buy Now</a>
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="item-img-wrap">
+											<img src="img/slide-img-1.png" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slide end -->
+						<!-- Slide start -->
+						<div class="slide item">
+							<div class="container">
+								<div class="row">										
+									<div class="col-md-5 col-md-offset-1">
+										<div class="item-description">
+											<h1>Galaxy S6 edge smartwatch</h1>
+											<p>Since smartwatches aren't really that useful for much else at this stage, Samsung needs to up its game again. Sammy has been churning out smartwatches since its Gear helped set the trend. But have any of them looked that great?</p>
+											<a href="#" class="btn btn-red">Buy Now</a>
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="item-img-wrap">
+											<img src="img/slide-img-1.png" alt="Alt">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<!-- Slide end -->
+		</section>
+	<section class="items">
+		<div class="container">
+				<div class="sorting clearfix">
+					<div class="sorting-wrapper clearfix">
+						<div class="sorting-sortby clearfix">
+							<span>sort by</span>
+							<select>
+								<option value="best match">best match</option>
+								<option value="best match">Lorem ipsum dolor.</option>
+								<option value="best match">Lorem.</option>
+							</select>
+						</div>
+					</div>
+						
+					<div class="sorting-keywords">
+							<span>keywords</span>
+							<input type="search" id="search-keywords" placeholder="Tablet"/>
+					</div>
+					<div class="sorting-availability">
+						<ul class="list">
+							<li class="list__item">
+								<label>
+									<input type="checkbox" checked>
+									<span class="icon"><i class="fa fa-check"></i></span>
+									Apple
+								</label>
+							</li>
+
+							<li class="list__item">
+								<label>
+									<input type="checkbox" checked>
+									<span class="icon"><i class="fa fa-check"></i></span>
+									Sony
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="sorting-wrapper-left">
+						<div class="sorting-shipto">
+							<span>ship to</span>
+							<select>
+								<option value="best match">usa</option>
+								<option value="best match">eur</option>
+								<option value="best match">rus</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="items-filters select">
+						<a href="#">Top Sales<i class="fa fa-angle-right"></i></a>
+						<a href="#">Top Sales<i class="fa fa-angle-right"></i></a>
+						<a href="#">Top Sales<i class="fa fa-angle-right"></i></a>
+					</div>
+					<div class="slider-range items-filters">
+						<div class="filters-header">
+								<span class="filters-header-title">Price</span>
+							</div>
+						<div class="slider-range-wrap">
+							<div id="slider-range"></div>
+							<input type="text" id="amount" readonly style="border:0">
+						</div>
+					</div>
+						<div class="items-filters">
+							<div class="filters-header">
+								<span class="filters-header-title">brands</span>
+								<a href="#" class="filters-all">all</a>
+							</div>
+							<div class="wrapper-list">
+								<ul class="list">
+									<li class="list__item">
+										<label>
+											<input type="checkbox" checked>
+											<span class="icon"><i class="fa fa-check"></i></span>
+											Apple
+											<span class="count">32</span>
+										</label>
+									</li>
+
+									<li class="list__item">
+										<label>
+											<input type="checkbox">
+											<span class="icon"><i class="fa fa-check"></i></span>
+											Sony
+											<span class="count">14</span>
+										</label>
+									</li>
+
+									<li class="list__item">
+										<label>
+											<input type="checkbox" checked>
+											<span class="icon"><i class="fa fa-check"></i></span>
+											Pebble
+											<span class="count">3</span>
+										</label>
+									</li>
+									
+									<li class="list__item">
+										<label>
+											<input type="checkbox">
+											<span class="icon"><i class="fa fa-check"></i></span>
+											Asus
+											<span class="count">5</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+					</div>
+					<div class="items-filters">
+							<div class="filters-header">
+								<span class="filters-header-title">condition</span>
+								<a href="#" class="filters-all">all</a>
+							</div>
+							<div class="wrapper-list">
+								<ul class="list">
+									<li class="list__item">
+										<label>
+											<input type="checkbox" checked>
+											<span class="icon"><i class="fa fa-check"></i></span>
+											New
+										</label>
+									</li>
+
+									<li class="list__item">
+										<label>
+											<input type="checkbox">
+											<span class="icon"><i class="fa fa-check"></i></span>
+											Manufacturer Refurbished
+										</label>
+									</li>
+
+									<li class="list__item">
+										<label>
+											<input type="checkbox" checked>
+											<span class="icon"><i class="fa fa-check"></i></span>
+											Seller Refurbished
+										</label>
+									</li>
+									
+									<li class="list__item">
+										<label>
+											<input type="checkbox">
+											<span class="icon"><i class="fa fa-check"></i></span>
+											Used
+										</label>
+									</li>
+
+									<li class="list__item">
+										<label>
+											<input type="checkbox">
+											<span class="icon"><i class="fa fa-check"></i></span>
+											For Parts or not Working
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>										
+					</div>
+				
+					<div class="col-md-9">
+						<div class="row">
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item">
+									<div class="product-item-img" style="background-image: url(img/1.jpg);"></div>
+									<div class="product-item-description">
+										<h4>Erenbach DZ09</h4>
+										<p>silver</p>
+										<div class="cost">$16.99</div>
+									</div>
+									<div class="btn-wrap">	
+										<a href="" class="btn btn-red">Add to cart</a>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item">
+								<div class="product-item-img"style="background-image: url(img/2.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Apple Watch 42mm</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item">
+								<div class="product-item-img"style="background-image: url(img/3.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Watch GT08</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item">
+								<div class="product-item-img"style="background-image: url(img/4.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Sony SmartWatch 3</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item clearfix">
+								<a href="item.html" class="a-item">
+								<div class="product-item-img"style="background-image: url(img/9.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Sony SmartWatch 3</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item">
+								<div class="product-item-img"style="background-image: url(img/10.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Sony SmartWatch 3</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item">
+								<div class="product-item-img"style="background-image: url(img/11.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Sony SmartWatch 3</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_6">
+							<div class="product-item-big">
+								<a href="item.html" class="a-item">
+								<div class="product-item-big-img"style="background-image: url(img/5.jpg);"></div>
+								<div class="product-item-description clearfix">
+									<h4>Pebble Time Round</h4>
+								</div>
+								<div class="btn-wrap clearfix">	
+									<a href="" class="btn btn-border">Add to cart</a>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item"> 
+								<div class="product-item-img"style="background-image: url(img/6.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Sony SmartWatch 3</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>        
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item">
+								<div class="product-item-img"style="background-image: url(img/7.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Sony SmartWatch 3</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>
+							</div>
+						</div>
+						<div class="col_1_of_3">
+							<div class="product-item">
+								<a href="item.html" class="a-item">     
+								<div class="product-item-img"style="background-image: url(img/8.jpg);"></div>
+								<div class="product-item-description">
+									<h4>Sony SmartWatch 3</h4>
+									<p>Black</p>
+									<div class="cost">$16.99</div>
+								</div>
+								<div class="btn-wrap">	
+									<a href="" class="btn btn-red">Add to cart</a>
+								</div>
+								</a>             
+							</div>
+						</div>
+						</div>
+					</div>					
+				</div>
+						
+					
+		</div>
+	</section>
+	<section class="paginator-wrap">
+		<div class="container">
+			<div class="paginator">
+				<a href="#" class="paginator-angle paginator-angle-left"><i class="fa fa-angle-left"></i></a>
+				<ul class="pagination">
+					<li><a href="#">1</a></li>
+					<li><a class="active" href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">7</a></li>
+					<li><a href="#">8</a></li>
+				</ul>
+				<a href="#" class="paginator-angle paginator-angle-right"><i class="fa fa-angle-right"></i></a>
+			</div>
+		</div>
+	</section>
+	<section class="bestsellers-wrap">
+		<div class="container">
+			<div class="bestsellers">
+				<div class="bestsellers-h2">
+					<h2>Best Sellers</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="bestsellers-item">
+							<div class="bestsellers-item-img"style="background-image: url(img/2.jpg);"></div>
+							<div class="bestsellers-item-description">
+								<h4>Apple Watch 42mmApple Watch 42mmApple Watch 42mm</h4>
+								<p>Black</p>
+								<div class="cost">$16.99</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="bestsellers-item">
+							<div class="bestsellers-item-img"style="background-image: url(img/7.jpg);"></div>
+							<div class="bestsellers-item-description">
+								<h4>Apple Watch 42mm</h4>
+								<p>Black</p>
+								<div class="cost">$16.99</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="bestsellers-item">
+							<div class="bestsellers-item-img"style="background-image: url(img/8.jpg);"></div>
+							<div class="bestsellers-item-description">
+								<h4>Apple Watch 42mm</h4>
+								<p>Black</p>
+								<div class="cost">$16.99</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="bestsellers-item">
+							<div class="bestsellers-item-img"style="background-image: url(img/11.jpg);"></div>
+							<div class="bestsellers-item-description">
+								<h4>Apple Watch 42mm</h4>
+								<p>Black</p>
+								<div class="cost">$16.99</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<script src="js/scripts.min.js"></script>
-	
+	<section class="customers">
+		<div class="container">
+			<div class="customers-h3">
+				<h3>Our customers</h3>
+				<span>It seems like hundreds of new iPhone apps pop up every week.</span>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="customers-item">
+						<div class="customers-item-img-wrap" style="background-image: url(img/customer-1.jpg);"></div>
+						<div class="customers-item-h5">
+							<h5>Gerhard Miklavž</h5>
+							<span>Developer</span>
+						</div>
+						<p>A major turning point in the history of early philosophical science was the controversial</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="customers-item">
+						<div class="customers-item-img-wrap" style="background-image: url(img/customer-1.jpg);"></div>
+						<div class="customers-item-h5">
+							<h5>Gerhard Miklavž</h5>
+							<span>Developer</span>
+						</div>
+						<p>A major turning point in the history of early philosophical science was the controversial</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="customers-item">
+						<div class="customers-item-img-wrap" style="background-image: url(img/customer-1.jpg);"></div>
+						<div class="customers-item-h5">
+							<h5>Gerhard Miklavž</h5>
+							<span>Developer</span>
+						</div>
+						<p>A major turning point in the history of early philosophical science was the controversial</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="subscribe">
+						<span>subscribe</span>
+						<div class="footer-search">
+							<div class="search-wrapper">
+								<input type="search" id="search-footer"/>
+								<a href="#" class="btn btn-red btn-red-footer">subscribe</a>
+							</div>							
+						</div>
+						<div class="social-networks">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="nav-payments">
+						<div class="nav-menu nav-menu-grey">
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Delivery & Payment</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</div>
+						<div class="payments">
+							<a href="#"><img src="img/paypal.png" alt=""></a>
+							<a href="#"><img src="img/visa.png" alt=""></a>
+							<a href="#"><img src="img/mastercard.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<a href="#" class="logo logo-footer"><img src="img/logo-grey.png" alt="logo"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="../js/scripts.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../libs/jquery/dist/jquery.min.js"></script>
+	<script src="../libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../libs/jquery/dist/eq.min.js"></script>
+	<script src="../libs/owl.carousel/dist/owl.carousel.min.js"></script>
+	<!--<script src="/libs/jQuery.equalHeights/query.equalheights.min.js"></script>-->
 </body>
 </html>
