@@ -1,4 +1,4 @@
-$(".f-properties-item").equalHeights();
+$(".f-properties-item-text").equalHeights();
 
 
 $(".toggle-mnu").click(function() {
