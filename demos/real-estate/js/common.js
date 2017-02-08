@@ -19,7 +19,6 @@ $('.slider-nav').slick({
 	slidesToShow: 3,
 	slidesToScroll: 1,
 	asNavFor: '.slider-main',
-	infinite: true,
 	focusOnSelect: true,
 	nextArrow: '<i class="fa fa-chevron-right"></i>',
 	prevArrow: '<i class="fa fa-chevron-left"></i>'
