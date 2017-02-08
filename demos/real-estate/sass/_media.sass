@@ -6,14 +6,23 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
-
+	.button-small
+		width: 17%
+		font-size: em(11px)
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
-.sect-search-selectors 
 	.styled-select
-		margin-bottom: 15px
+		margin-bottom: 25px
+
+	.button-small
+		width: 22%
+		font-size: em(12px)
+
+	.contact-form
+		&-email
+			input
+				margin-bottom: 10px
 // .last 
 // 	width: 100%
 // 	display: inline-block
@@ -24,13 +33,14 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
-
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
 
-
+@media only screen and (max-width : 330px)
+	.button-small
+		width: 18%
+		font-size: em(12px)
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
