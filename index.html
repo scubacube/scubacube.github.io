@@ -51,7 +51,7 @@
 						<nav class="main-mnu">
 							<ul>
 								<li><a href="#portfolio">portfolio</a></li>
-								<li><a href="#tools">my tools</a></li>
+								<li><a href="#my-tools">my tools</a></li>
 								<li><a href="#contact">contact</a></li>
 							</ul>
 						</nav>
@@ -65,22 +65,22 @@
 					<h4>Hello, my name is Alexey, I am junior front end developer. Here you can see examples of my work.</h4>
 					<ul class="social-buttons">
 						<li>
-							<a href="#" class="social-btn social-fb">
+							<a href="https://www.facebook.com/scubacube" target="_blank" class="social-btn social-fb">
 								<span class="ion-social-facebook"></span>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="social-btn social-github">
+							<a href="https://github.com/scubacube" target="_blank" class="social-btn social-github">
 								<span class="ion-social-github"></span>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="social-btn social-email">
+							<a href="Mailto:dscubacube@gmail.com" target="_blank" class="social-btn social-email">
 								<span class="ion-email"></span>
 							</a>
 						</li>
 						<li>
-							<a href="#" class="social-btn social-linkedin">
+							<a href="#" class="social-btn social-linkedin" target="_blank">
 								<span class="ion-social-linkedin"></span>
 							</a>
 						</li>					
@@ -89,51 +89,69 @@
 			</div>
 		</div>
 	</header>
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-12"><h1>Portfolio</h1></div>
-				<div class="col-md-6">
-					<a href="/demos/real-estate" class="item">
-						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
-						<div class="item-image" style="background-image: url(img/1.jpg);">
-							<i class="ion-eye"></i>
-							
-						</div>
-					</a>						
-						
+			<h1>Portfolio</h1>
+			<div class="filter-wrap">
+				<div class="button-group filters-button-group">
+					<button class="filter is-checked" data-filter="*">All</button>
+					<button class="filter" data-filter=".Design">Design</button>
+					<button class="filter" data-filter=".Html">Html/Css/Jquery</button>
 				</div>
-				<div class="col-md-6">
-					<a href="/demos/wtch" class="item">
-						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
+			</div>
+			<div class="grid">
+				<div class="element-item Design Html" data-category="Design Html">
+					<a href="/demos/wtch" class="item" target="_blank">
 						<div class="item-image" style="background-image: url(img/wtch.jpg);">
-							<i class="ion-eye"></i>
-							
+							<i class="ion-eye"></i>								
 						</div>
+						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
 					</a>
 				</div>
-				<div class="col-md-6">
-					<a href="/demo/prokurs-demo" class="item">
-						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
-						<div class="item-image" style="background-image: url(img/1.jpg);">
-							<i class="ion-eye"></i>
-							
+				<div class="element-item Html" data-category="Html">
+					<a href="#" class="item html" target="_blank">
+						<div class="item-image" style="background-image: url(img/2.png);">
+							<i class="ion-eye"></i>							
 						</div>
+						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
 					</a>
 				</div>
-				<div class="col-md-6">
-					<a href="#" class="item">
-						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
+				<div class="element-item Design Html" data-category="Design Html">
+					<a href="/demos/real-estate" class="item" target="_blank">
 						<div class="item-image" style="background-image: url(img/1.jpg);">
-							<i class="ion-eye"></i>
-							
+							<i class="ion-eye"></i>							
 						</div>
+						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
+					</a>					
+				</div>
+				<div class="element-item Html" data-category="Html">
+					<a href="/demo/prokurs-demo" class="item" target="_blank">
+						<div class="item-image" style="background-image: url(img/3.png);">
+							<i class="ion-eye"></i>								
+						</div>
+						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
+					</a>
+				</div>
+				<div class="element-item Design" data-category="Design">
+					<a href="antena.html" class="item" target="_blank">
+						<div class="item-image" style="background-image: url(img/4.png);">
+							<i class="ion-eye"></i>							
+						</div>
+						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
+					</a>
+				</div>
+				<div class="element-item Design" data-category="Design">
+					<a href="antena.html" class="item" target="_blank">
+						<div class="item-image" style="background-image: url(img/Studio-antena.png);">
+							<i class="ion-eye"></i>							
+						</div>
+						<div class="item-text-description">Responsive .psd design and Html/Css/Jquery code of real estate company</div>
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="my-tools">
+	<section class="my-tools" id="my-tools">
 		<div class="container">
 			<div class="row">
 				<div class="my-tools-h1">
