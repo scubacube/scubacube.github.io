@@ -24,7 +24,18 @@ $(function() {
 
 
 	
-	$( "#slider-range" ).slider({
+	$( "#slider-range").slider({
+	range: true,
+	min: 0,
+	max: 1200,
+	values: [ 75, 300 ],
+	slide: function( event, ui ) {
+		$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+	}
+	});
+	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+	" - $" + $( "#slider-range" ).slider( "values", 1 ) );
+	$( "#slider-range-hidden").slider({
 	range: true,
 	min: 0,
 	max: 1200,
@@ -36,5 +47,41 @@ $(function() {
 	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 	" - $" + $( "#slider-range" ).slider( "values", 1 ) );
 
+
+
+	$(".toggle-mnu").click(function() {
+	$(this).toggleClass("on");
+	$(".main-mnu").slideToggle();
+	return false;
+	});
+	$(".btn-red-filters").click(function() {
+	$(this).toggleClass("on");
+	$(".items-filters").slideToggle();
+	return false;
+});
+	$(".btn-red-sorting").click(function() {
+	$(this).toggleClass("on");
+	$(".sorting").slideToggle();
+	return false;
+});
+
+
+	 $('.slider-main').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	fade: true,
+	asNavFor: '.slider-nav-content',
+	nextArrow: '<i class="fa fa-chevron-right"></i>',
+	prevArrow: '<i class="fa fa-chevron-left"></i>'
+});
+$('.slider-nav-content').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	asNavFor: '.slider-main',
+	infinite: true,
+	focusOnSelect: true,
+	nextArrow: '<i class="fa fa-chevron-right"></i>',
+	prevArrow: '<i class="fa fa-chevron-left"></i>'
+});
 
 });
