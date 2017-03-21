@@ -11,100 +11,221 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
 	<link rel="stylesheet" href="css/main.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 </head>
 
 <body>
 	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="logo">
-						<a href="#">
-							<img src="img/logo.png" alt="">
-							<!--<span>Streamly</span>-->
-						</a>
+		<div class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<div class="logo-wrapper">
+							<a class="logo" href="#">
+								<img src="img/logo.png" alt="">
+							</a>		
+						</div>			
+					</div>
+					<div class="col-lg-5 col-md-9 col-sm-9 col-xs-12">
+						<div class="nav-wrapper clearfix">
+							<ul class="nav">
+								<li><a href="#">features</a></li>
+								<li><a href="#">connect car</a></li>
+								<li><a href="#" class="buy"><span>buy now</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 hidden-md hidden-sm hidden-xs">
+						<div class="download">
+							<a href="#"><img src="img/google_play.png" alt=""></a>
+							<a href="#"><img src="img/app_store.png" alt=""></a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="bottom-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-sm-12 bottom-line-content">
+						<h1>Smarter.<br>
+							Driving.<br>
+							Every Day.
+						</h1>
+						<p class="header-text">Connect your car to CarGnostic, to make driving smarter, safer, greener and more affordable.</p>
+						<a href="#" class="button">Connect now!</a>
 					</div>
 				</div>
-				<div class="col-md-8">
-					<ul class="navbar">
-						<li><a href="">Home</a></li>
-						<li><a href="">Solution</a></li>
-						<li><a href="">Use Cases</a></li>
-						<li><a href="">Streams</a></li>
-						<li><a href="">Blog</a></li>
-						<li><a href="">FAQ</a></li>
-						<li><a href="">Developers</a></li>	
-					</ul>	
-				</div>			
 			</div>
 		</div>
 	</header>
-	<div class="main">
+	<section class="first">
 		<div class="container">
 			<div class="row">
-				<div class="first clearfix">
-					<div class="col-md-7" style="position: relative;">
-						<h2>Streaming process shouldn't be this hard.</h2>
-						<p>Re-thinking the way of your streaming now!</p>
-						<img class="big-img" src="img/image-1.png" alt="">
-						<img class="arrow" src="img/arrow_right.png" alt="">
+				<div class="col-lg-4 col-md-4 col-sm-12 left clearfix">
+					<div class="feature">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						<div class="img-wrap"><img src="img/feature1.png" alt=""></div>
+							<h3>Drive Smarter</h3>
+							<p>Give your car a voice, unlocking diagnostics and real-time data</p>
 					</div>
-					<div class="col-md-5">
-						<div class="subscribe-form clearfix">
-							<form id="SubscribeForm" class="clearfix" style="display: block;">
-								<input class="email-name" placeholder="Full name" type="name" name="email-name">
-								<input placeholder="Email" type="email" name="email-subscribe">
-								<input placeholder="Password" type="password" name="email-password">
-								<div class="check"><label><input type="checkbox">I agree to <a href="#">Streamly Terms</a></div></label>
-								<input type="submit" id="submit-subscribe" value="Start now!" name="submithere">
-							</form>
+					<div class="feature">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						<div class="img-wrap"><img src="img/feature1.png" alt=""></div>
+						<div class="feature-desc">
+							<h3>Save Money</h3>
+							<p>Save money on gas, repairs,
+							maintenance and improve resale
+							value</p>
+						</div>
+					</div>
+					<div class="feature">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+						<div class="img-wrap"><img src="img/feature1.png" alt=""></div>
+						<div class="feature-desc">
+							<h3>Diagnostics</h3>
+							<p>Keep safe with remote alerts, and insights into maintenance needs and recalls</p>
 						</div>
 					</div>
 				</div>
-				<div class="second">
-					<div class="col-md-6">
-						<div class="description">
-							<h2>Streamly is an integrated, all-inclusive, solution for real-time data processing.</h2>
-							<p>It is enterprise-grade and includes all the tools you need for efficient, easy, and scalable stream processing.</p>
-							<p class="desc">
-								Streamly is powered by proven, state-of-the art, open source technologies (<a href="#">Spark</a>, <a href="#">Kafka</a>, <a href="#">EMQTT</a>,<a href="#">Cassandra</a>, <a href="#">Elasticsearch</a>, <a href="#">Kibana</a>, and <a href="#">Zeppelin</a>) tied together in a seamless solution. Sign up today, and eliminate complex provisioning, integration, configuration, and operation!
-							</p>
-						</div>
+				<div class="col-md-4 iphone1">
+					<img src="img/iphone1.png" alt="">
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 right clearfix">
+					<div class="feature">
+						<i class="fa fa-angle-left" aria-hidden="true"></i>
+						<div class="img-wrap"><img src="img/feature1.png" alt=""></div>
+							<h3>Metrics</h3>
+							<p>Improve your vehicle's fuel efficiency and your driving habits</p>
 					</div>
-					<div class="col-md-6" style="position: relative;">
-						<h2>Stream processing as a service</h2>
-						<p>One-stop-shop for real-time data processing.</p>
-						<img class="big-img" src="img/image-2.png" alt="">
-						<img class="arrow" src="img/arrow_left.png" alt="">
+					<div class="feature">
+						<i class="fa fa-angle-left" aria-hidden="true"></i>
+						<div class="img-wrap"><img src="img/feature1.png" alt=""></div>
+							<h3>Analytics</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-angle-left" aria-hidden="true"></i>
+						<div class="img-wrap"><img src="img/feature1.png" alt=""></div>
+							<h3>Engine Light</h3>
+							<p>Decode the 'Check Engine' alert, get cost estimates and find mechanics</p>
 					</div>
 				</div>
-				<div class="col-md-12">
-					<div class="btn-wrapper">
-						<a href="#" class="btn">Start Now!</a>
-					</div>
-				</div>
-			</div>
 		</div>
-	</div>
+	</section>
+	<section class="second">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 left">
+					<h3>Get Device</h3>
+					<p>
+						CarGnostic works with preferred OBD devices, starting as low as $10. Provides automated VIN decoding, multi-car support and push alerts.
+					</p>
+					<div class="button-wrap">
+						<a href="#" class="button-white">buy now</a>
+					</div>
+				</div>
+				<div class="col-md-4 iphone2">
+					<img class="iphone2-img" src="img/iphone2.png" alt="">
+					<img class="connector" src="img/layer.png" alt="">
+				</div>
+				<div class="col-md-4 right">
+					<h3>Get CarGnostic</h3>
+					<p>CarGnostic is on iPhone and Android. Download and start using today. Works with most cars since 1996, including all major brands.
+					</p>
+					<div class="download">
+						<div class="download-wrap">
+							<a href="#" class="google_play"><img src="img/google_play.png" alt=""></a>
+							<a href="#" class="app_store"><img src="img/app_store.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<span class="copyright">Copyright © 2017 Streamly, Inc.</span>
-					<ul class="footer-nav">
-						<li><a href="">Privacy Policy</a></li><img src="img/ellipse-1.png" alt="">
-						<li><a href="">Terms</a></li><img src="img/ellipse-1.png" alt="">
-						<li><a href="">Contact Us</a></li><img src="img/ellipse-1.png" alt="">
-						<li><a href="">About Us</a></li>
+				<div class="col-md-2 col-xs-6">
+					<h5>get started</h5>
+					<ul>
+						<li>
+							<a href="#">Download for iPhone</a>
+						</li>
+						<li>
+							<a href="#">Download for Android</a>
+						</li>
 					</ul>
+				</div>
+				<div class="col-md-2 col-xs-6">
+					<h5>COMPANY</h5>
+					<ul>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Privacy</a>
+						</li>
+						<li>
+							<a href="#">Terms of Service </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-xs-6">
+					<h5>HELP</h5>
+					<ul>
+						<li>
+							<a href="#">FAQ</a>
+						</li>
+						<li>
+							<a href="#">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2 col-xs-6 social">
+					<h5>social</h5>
+					<ul>
+						<li>
+							<a href="#"><img src="img/fb.png" alt="">Facebook</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/tw.png" alt="">Twitter</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-12 search">
+					<h5>NEWSLETTER</h5>
+					<form id="SubscribeForm" style="display: block;">
+						<input placeholder="Email Address" type="email" name="email-subscribe">
+						<input type="submit" id="submit-subscribe" value="Subscribe" name="submithere">
+					</form>
 				</div>
 			</div>
 		</div>
+	
+	
+	
+	
 	</footer>
+
+
 	<script src="js/scripts.min.js"></script>
 
 </body>
