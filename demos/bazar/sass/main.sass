@@ -1,0 +1,243 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+	overflow-x: hidden
+	background-color: #e1e1e1
+h2, h1
+	margin-top: 0
+// .img-responsive
+// 	display: block
+// 	max-width: 100%
+// 	height: auto
+
+
+header
+	background-color: #fff
+	position: fixed
+	top: 0
+	width: 100%
+	z-index: 99
+	border-bottom: 4px solid #3498db
+	.logo
+		float: left
+		margin-top: 16px
+		font-weight: bold
+		a 
+			color: #333
+			text-decoration: none
+			font-size: 18px
+	.nav
+		display: inline-block
+		list-style: none
+		float: right
+		li 
+			display: inline-block
+			a 	
+				color: inherit
+				margin-right: 20px
+	.nav-mobile
+		text-align: center
+		background-color: #fff
+		padding: 30px 0
+		margin: 0
+		display: inline-block
+		li 
+			list-style: none
+			display: inline-block
+			a
+				text-decoration: none
+				padding: 10px 20px
+				border-radius: 50px
+				color: #333
+				&::last-child
+					padding-right: 0
+				&:hover
+					background-color: #007099
+					color: #fff
+	.hidden-mnu 
+		// margin-bottom: 50px
+		width: 100%
+		li 
+			display: block
+			padding: 6px 0
+			a 
+				display: block
+	.toggle-mnu 
+		display: inline-block
+		width: 28px
+		height: 28px
+		margin: 20px 0
+		float: right
+		span:after, span:before 
+			content: ""
+			position: absolute
+			left: 0
+			top: 9px
+
+		span:after
+			top: 18px
+
+		span 
+			position: relative
+			display: block
+
+		span, span:after, span:before
+			width: 100%
+			height: 2px
+			background-color: #007099
+			transition: all 0.3s
+			backface-visibility: hidden
+			border-radius: 2px
+
+
+		&.on span 
+			background-color: transparent
+
+		&.on span:before 
+			transform: rotate(45deg) translate(-1px, 0px)
+
+		&.on span:after 
+			transform: rotate(-45deg) translate(6px, -7px)
+.top-image
+	
+    // min-height: 254px
+    background: #333 url(/img/bg.jpg) no-repeat center 
+    background-size: 120%
+    color: #ffffff
+	
+.top-image-h2
+	padding-top: 60px
+	padding-bottom: 20px
+	text-align: center
+.container-top-image
+	margin-top: 50px
+.popis
+ 	padding: 30px 0
+.popis-bg
+	background-color: #fff
+	padding: 25px
+	border-radius: 3px
+	box-shadow: 1px 1px 10px #888888
+.modely
+	// margin-bottom: 60px
+	padding: 60px 0
+	background-color: #fff
+	
+.car
+	.cena
+		color: #3498db
+		font-weight: bold
+	margin-bottom: 25px
+	text-align: center
+	img
+		width: 100%
+	span 
+		display: block
+		font-size: 13px
+	.name	
+		font-size: 16px
+		color: #3d788f
+.nabidka
+	background-color: #fff
+	padding: 60px 0
+	a 
+		color: #333
+	img
+		width: 100%
+	span
+		display: block
+.partnery
+	background-color: #fff
+	overflow-y: hidden
+	height: 180px
+	text-align: center
+	.brand
+		display: inline-block
+		width: 180px
+		img 
+			width: 100%
+.model 
+	background-color: #fff
+	padding: 60px 0
+	div 
+		margin-bottom: 10px
+.seznam
+	padding: 60px 0
+	background-color: #fff
+	text-align: center
+.contacts-h2
+	text-align: center
+.contacts
+	padding: 60px 0
+	background-color: #fff
+	.map
+		overflow: hidden
+		padding-bottom: 56.25%
+		position: relative
+		height: 0
+	.map iframe
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		position: absolute
+	input
+		width: 100%
+		display: block
+	textarea
+		width: 100%
+	.form
+		margin-top: 125px
+		span
+			display: block
+	.button-wrap
+		color: #fff
+	.button
+		width: 100%	
+		padding: 10px 35px
+		background-color: #3498db
+		-webkit-transition: all .25s
+		transition: all .25s
+		border: none
+		outline: 0
+		
+	.adress
+		margin-top: 60px!important
+footer
+	background-color: #e1e1e1
+	padding: 15px 0
+@import "media" // Всегда в конце
