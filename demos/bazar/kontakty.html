@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 
 	<title>Kontakty | Autobazar Škoda</title>
-	<meta name="description" content="">
+	<meta name="description" content="Autobazar Škoda - stovky nových i ojetých aut Škoda na prodej">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -66,15 +66,18 @@
             
             <div class="row adress">
                 <div class="col-sm-6 form">
-                    <span>Jméno: </span>
-                    <input type="text" name="name">
-                    <span>Email: </span>
-                    <input type="text" name="email">
-                    <span>Váš dotaz: </span>
-                    <textarea name="comment" rows="5" cols="40"></textarea>
-                    <div class="button-wrap">
-							<button type="submit" class="button">Odeslat</button>
-						</div>
+					<form id="form">
+						<span>Jméno: </span>
+						<input type="text" name="name" id="name" required="required">
+						<span>Email: </span>
+						<input type="text" name="email" id="email" required="required">
+						<span>Váš dotaz: </span>
+						<textarea name="comment" id="message" rows="5" cols="40" required="required"></textarea>
+						<div class="button-wrap">
+								<button type="submit" class="button">Odeslat</button>
+								<input type="button" id="submit" value="Send Message"/>
+							</div>
+					</form>
                 </div>
                 <div class="col-sm-6">
                     <h3>Adresa:</h3>
@@ -94,6 +97,5 @@
 		</div>
 	</footer>
 	<script src="js/scripts.min.js"></script>
-
 </body>
 </html>
