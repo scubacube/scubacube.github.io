@@ -5,12 +5,17 @@
 
 	<meta charset="utf-8">
 
-	<title>Autobazar Škoda</title>
-	<meta name="description" content="Autobazar Škoda - stovky nových i ojetých aut Škoda na prodej">
+	<title>Autobazar Ford</title>
+	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -24,9 +29,11 @@
 </head>
 
 <body>
+
 	<header>
-		<div class="container">
-				<div class="logo"><a href="index.html">Autobazar Škoda</a></div>
+		<div class="top-menu">
+			<div class="container">
+				<div class="logo"><a href="index.html">Autobazar Ford</a></div>
 				<ul class="nav hidden-sm hidden-xs">
 					<li><a href="index.html">Hlavní stránka</a></li>
 					<li><a href="nabidka.html">Seznam nabídek</a></li>
@@ -45,72 +52,63 @@
 							<li><a href="kontakty.html">Kontakty</a></li>
 						</ul>
 				</div>
-			
-			
-		</div>
-	
+			</div>
+		</div>	
 	</header>
-	<div class="top-image">
-		<div class="container container-top-image">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 top-image-h2">
-					<h2>Vítejte na stránkách našeho autobazaru. Specializujeme se na značku Škoda</h2>
-				</div>
+	<div class="container">
+		<div class="slider-nav-container">
+			<div class="slider-nav">
+				<div class="prev"></div>
+				<div class="next"></div>
 			</div>
 		</div>
 	</div>
-	<section class="modely">
-		<div class="container">
-			<h2>Modely</h2>
-			<div class="row">
-				<div class="col-sm-3 col-xs-6">
-					<div class="car">
-						<img src="img/19.jpg" alt="Škoda Octavia" title="Škoda Octavia">
-						<span class="cena">179 900 Kč</span>
-						<span class="name">Škoda Octavia</span>
-						<span>2009, 138 350 km</span>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<div class="car">
-						<img src="img/18.jpg" alt="Škoda Fabia" title="Škoda Fabia">
-						<span class="cena">189 900 Kč</span>
-						<span class="name">Škoda Fabia</span>
-						<span>2007, 30 000 km</span>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<div class="car">
-						<img src="img/15.jpg" alt="Škoda Rapid" title="Škoda Rapid">
-						<span class="cena">10 800 Kč</span>
-						<span class="name">Škoda Rapid</span>
-						<span>1996, 94 481 km</span>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<div class="car">
-						<img src="img/13.jpg" alt="Škoda Superb" title="Škoda Superb">
-						<span class="cena">699 000 Kč</span>
-						<span class="name">Škoda Superb</span>
-						<span>2015, 22 868 km</span>
-					</div>
-				</div>
+	<div id="owl-example" class="owl-carousel">
+	<div class="owl-slide" style="background-image: url('../img/1.jpg');">
+			<div class="owl--text">
+				<h3>Ford Galaxy 2.2</h3>
+				<p>
+					Uvedeno do provozu : 2008 <br>
+					Objem: 2179 ccm <br>
+					Druh paliva: nafta<br>
+					Výkon: 129kW<br>
+					Najeto: 259075 km
+				</p>
+				<span class="price">228 000 Kč</span>
 			</div>
 		</div>
-	</section>
-	<section class="popis">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 popis-bg">
-					<h1>Autobazar Škoda - prodej vozů Škoda</h1>
-					Aktuální nabídka značky Škoda. Najděte stovky nových i ojetých aut na prodej na našich webových stránkách. Všechny modely značky Škoda zde.
-				</div>
+	<div class="owl-slide" style="background-image: url('../img/2.jpg');">
+			<div class="owl--text">
+				<h3>Ford Mondeo</h3>
+				<p>
+					Uvedeno do provozu : 2016 <br>
+					Objem: 	2 000 ccm <br>
+					Druh paliva: nafta<br>
+					Výkon: 132 kW<br>
+					Najeto: 5 km
+				</p>
+				<span class="price">949 900 Kč</span>
 			</div>
 		</div>
-	</section>
+	<div class="owl-slide" style="background-image: url('../img/3.jpg');">
+			<div class="owl--text">
+				<h3>Ford Kuga</h3>
+				<p>
+					Uvedeno do provozu : 2008 <br>
+					Objem: 	1 997 ccm <br>
+					Druh paliva: nafta<br>
+					Výkon: 100 kW<br>
+					Najeto: 227 950 km <br>
+				</p>
+				<span class="price">235 990 Kč</span>
+			</div>
+		</div>
+	</div>
 	<section class="nabidka">
 		<div class="container">
-			<h2><a href="nabidka.html">Nabídka</a></h2>
+			<h1>Autobazar Ford</h1>
+			<p>Vítejte na stránkách našeho autobazaru. Specializujeme se na značku Škoda</p>
+			<p>Aktuální nabídka značky Škoda. Najděte stovky nových i ojetých aut na prodej na našich webových stránkách. Všechny modely značky Škoda zde.</p>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="car">
@@ -130,7 +128,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="car">
-						<img src="img/4.jpg" alt="Škoda Fabia" title="Škoda Fabia">
+						<img src="img/2.jpg" alt="Škoda Fabia" title="Škoda Fabia">
 						<span class="cena">265 000 Kč</span>
 						<span class="name">Škoda Fabia</span>
 						<span>2013, 105 000 km</span>
@@ -139,39 +137,69 @@
 			</div>
 		</div>
 	</section>
+	<section class="link-to-all">
+		<div class="container">
+			<span>ZOBRAZIT KOMPLETNÍ NABÍDKU VOZIDEL </span>
+			<a href="nabidka.html">KOMPLETNÍ NABÍDKA</a>
+		</div>
+	</section>
 	<section class="model">
 		<div class="container">
-			<h2>Všechny modely aut Škoda</h2>
+			<h2>Všechny modely aut Ford</h2>
 			<div class="row">
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Citigo</a>
+					<a href="https://420auto.cz/">C-Max</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Fabia</a>
+					<a href="https://420auto.cz/">Fiesta</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Octavia</a>
+					<a href="https://420auto.cz/">Focus</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Rapid</a>
+					<a href="https://420auto.cz/">Fusion</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Superb</a>
+					<a href="https://420auto.cz/">Galaxy</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Praktik</a>
+					<a href="https://420auto.cz/">Ka</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Roomster</a>
+					<a href="https://420auto.cz/">Kuga</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Yeti</a>
+					<a href="https://420auto.cz/">Mondeo</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Felicia</a>
+					<a href="https://420auto.cz/">S-Max</a>
 				</div>
 				<div class="col-md-3 col-xs-6">
-					<a href="https://420auto.cz/">Favorit</a>
+					<a href="https://420auto.cz/">Transit</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="https://420auto.cz/">B-Max</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="https://420auto.cz/">Edge</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="https://420auto.cz/">Escort</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="https://420auto.cz/">Grand C-Max</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="https://420auto.cz/">Maverick</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="https://420auto.cz/">Scorpio</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="https://420auto.cz/">Sierra</a>
+				</div>
+				<div class="col-md-3 col-xs-6">
+					<a href="https://420auto.cz/">Ka+</a>
 				</div>
 			</div>
 		</div>
@@ -197,10 +225,17 @@
 	</section>
 	<footer>
 		<div class="container">
-			© 2010-2017, Autobazar Škoda.
+			<span>© 2010-2017, Autobazar Ford.</span>
+			<div class="nav-footer">
+				<ul class="nav">
+					<li><a href="index.html">Hlavní stránka</a></li>
+					<li><a href="nabidka.html">Seznam nabídek</a></li>
+					<li><a href="kontakty.html">Kontakty</a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 	<script src="js/scripts.min.js"></script>
-
+	<script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
 </body>
 </html>

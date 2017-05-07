@@ -26,139 +26,177 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-html,
+html, body
 	height: 100%
 
 body
-	min-height: 100%
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	line-height: 1.75
-	font-family: Verdana, Geneva, Tahoma, sans-serif
+	font-family: $default-font
 	overflow-x: hidden
-	background-color: #e1e1e1
-h2, h1
-	margin-top: 0
-// .img-responsive
-// 	display: block
-// 	max-width: 100%
-// 	height: auto
-
-
-header
 	background-color: #fff
-	position: fixed
-	top: 0
-	width: 100%
-	z-index: 99
-	border-bottom: 4px solid #3498db
-	.logo
-		float: left
-		margin-top: 16px
-		font-weight: bold
-		a 
-			color: #333
-			text-decoration: none
-			font-size: 18px
-	.nav
-		display: inline-block
-		list-style: none
-		float: right
-		li 
-			display: inline-block
-			a 	
-				color: inherit
-				margin-right: 20px
-	.nav-mobile
-		text-align: center
-		background-color: #fff
-		padding: 30px 0
-		margin: 0
-		display: inline-block
-		li 
-			list-style: none
-			display: inline-block
-			a
-				text-decoration: none
-				padding: 10px 20px
-				border-radius: 50px
-				color: #333
-				&::last-child
-					padding-right: 0
-				&:hover
-					background-color: #007099
-					color: #fff
-	.hidden-mnu 
-		// margin-bottom: 50px
-		width: 100%
-		li 
-			display: block
-			padding: 6px 0
-			a 
-				display: block
-	.toggle-mnu 
-		display: inline-block
-		width: 28px
-		height: 28px
-		margin: 20px 0
-		float: right
-		span:after, span:before 
-			content: ""
-			position: absolute
-			left: 0
-			top: 9px
 
-		span:after
-			top: 18px
-
-		span 
-			position: relative
-			display: block
-
-		span, span:after, span:before
-			width: 100%
-			height: 2px
-			background-color: #007099
-			transition: all 0.3s
-			backface-visibility: hidden
-			border-radius: 2px
-
-
-		&.on span 
-			background-color: transparent
-
-		&.on span:before 
-			transform: rotate(45deg) translate(-1px, 0px)
-
-		&.on span:after 
-			transform: rotate(-45deg) translate(6px, -7px)
-.top-image
-	
-    // min-height: 254px
-    background: #333 url(../img/bg.jpg) no-repeat center 
-    background-size: 120%
-    color: #ffffff
-	
-.top-image-h2
-	padding-top: 60px
-	padding-bottom: 20px
+h1, h2
 	text-align: center
-.container-top-image
-	margin-top: 50px
-.popis
- 	padding: 30px 0
-	 text-align: center
-.popis-bg
+.logo
+	display: inline-block
+	float: left
+	margin-top: 17px
+	a 
+		color: black
+		text-decoration: none
+		font-size: 22px
+		font-weight: bold
+		
+.nav
+	display: inline-block
+	float: right
+	li 
+		display: inline-block
+		padding: 5px 10px
+		&:hover
+			background-color: #d56808
+			color: #fff
+	a 
+		color: inherit
+		text-decoration: none
+.nav-mobile
+	text-align: center
 	background-color: #fff
-	padding: 45px
-	border-radius: 3px
-	box-shadow: 1px 1px 10px #888888
-.modely
-	// margin-bottom: 60px
-	padding: 60px 0
-	background-color: #fff
+	padding: 30px 0
+	margin: 0
+	display: inline-block
+	li 
+		list-style: none
+		display: inline-block
+		a
+			text-decoration: none
+			padding: 10px 20px
+			border-radius: 50px
+			color: #333
+			&::last-child
+				padding-right: 0
+			&:hover
+				background-color: #d87a27
+				color: #fff
+.hidden-mnu 
+	// margin-bottom: 50px
+	width: 100%
+	li 
+		display: block
+		padding: 6px 0
+		a 
+			display: block
+.toggle-mnu 
+	display: inline-block
+	width: 28px
+	height: 28px
+	margin: 24px 0
+	float: right
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: #d87a27
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)
+.owl-carousel 
+	position: relative;
+	height: 80%;
 	
+	div:not(.owl-controls) 
+		height: 100%;
+	
+	
+	.owl-slide 
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;	
+	
+	div.owl--text
+		position: absolute;
+		bottom: 2em;
+		left: 2em;
+		// max-width: 16em;
+		max-height: 20em
+		max-width: 25%
+		padding: 1em;
+		background: rgba(255, 255, 255, .8);
+		border-radius: 4px;
+		font-size: 1em
+		white-space: nowrap
+	.owl-controls 
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		
+		.owl-buttons 
+			div 
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				display: inline-block;
+				zoom: 1;
+				margin: 0;
+				width: 50px;
+				height: 30px;
+				line-height: 25px;
+				text-align: center;
+				font-size: .9em;
+				border-radius: 3px;
+				color: #FFF;
+				background: #000;
+				opacity: .6;
+				text-transform: capitalize;
+			
+			
+			.owl-prev 
+				left: 5px;
+			
+			
+			.owl-next 
+				right: 5px;
+			
+.link-to-all
+	text-align: center
+	background-color: #f6f6f6
+	padding: 30px 0
+	span 
+		display: inline-block
+	a
+		display: inline-block
+		padding: 5px 15px
+		background-color: #d87a27
+		color: #fff
+		text-decoration: none
+		&:hover
+			background-color: #c16f27
 .car
 	.cena
 		color: #3498db
@@ -174,14 +212,18 @@ header
 		font-size: 16px
 		color: #3d788f
 .nabidka
-	background-color: #fff
-	padding: 60px 0
 	a 
 		color: #333
 	img
 		width: 100%
 	span
 		display: block
+.model 
+	padding: 60px 0
+	div 
+		margin-bottom: 10px
+		a 
+			color: #cc6000
 .partnery
 	background-color: #fff
 	overflow-y: hidden
@@ -192,56 +234,18 @@ header
 		width: 180px
 		img 
 			width: 100%
-.model 
-	background-color: #fff
-	padding: 60px 0
-	div 
-		margin-bottom: 10px
-.seznam
-	padding: 60px 0
-	background-color: #fff
-	text-align: center
-.contacts-h2
-	text-align: center
-.contacts
-	padding: 60px 0
-	background-color: #fff
-	.map
-		overflow: hidden
-		padding-bottom: 56.25%
-		position: relative
-		height: 0
-	.map iframe
-		left: 0
-		top: 0
-		height: 100%
-		width: 100%
-		position: absolute
-	input
-		width: 100%
-		display: block
-		border: 1px solid #CCCCCC !important
-	textarea
-		width: 100%
-		border: 1px solid #CCCCCC !important
-	.form
-		margin-top: 125px
-		span
-			display: block
-	.button-wrap
-		color: #fff
-	.button
-		width: 100%	
-		padding: 10px 35px
-		background-color: #3498db
-		-webkit-transition: all .25s
-		transition: all .25s
-		border: none
-		outline: 0
-		
-	.adress
-		margin-top: 60px
+
 footer
-	background-color: #e1e1e1
-	padding: 15px 0
+	span
+		
+		margin-top: 22px
+		float: left
+	padding: 30px
+	background-color: #333
+	color: #d9d9d9
+	a 
+		color: #d9d9d9
+		&:hover
+			color: #d9d9d9
+
 @import "media" // Всегда в конце
