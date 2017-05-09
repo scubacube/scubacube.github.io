@@ -6,19 +6,15 @@
 	<meta charset="utf-8">
 
 	<title>Autobazar Ford</title>
-	<meta name="description" content="">
+	<meta name="description" content="Autobazar Ford - použité i nové automobily Ford na prodej. Servis a pojištění aut">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	
 
 	<link rel="stylesheet" href="css/main.min.css">
-
+	<link rel="stylesheet" type="text/css" href="libs/slick-carousel/slick/slick.css">
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -55,16 +51,14 @@
 			</div>
 		</div>	
 	</header>
-	<div class="container">
 		<div class="slider-nav-container">
 			<div class="slider-nav">
 				<div class="prev"></div>
 				<div class="next"></div>
 			</div>
 		</div>
-	</div>
 	<div id="owl-example" class="owl-carousel">
-	<div class="owl-slide" style="background-image: url('../img/1.jpg');">
+	<div class="owl-slide" style="background-image: url('img/1.jpg');">
 			<div class="owl--text">
 				<h3>Ford Galaxy 2.2</h3>
 				<p>
@@ -74,10 +68,10 @@
 					Výkon: 129kW<br>
 					Najeto: 259075 km
 				</p>
-				<span class="price">228 000 Kč</span>
+				<span class="cena">228 000 Kč</span>
 			</div>
 		</div>
-	<div class="owl-slide" style="background-image: url('../img/2.jpg');">
+	<div class="owl-slide" style="background-image: url('img/2.jpg');">
 			<div class="owl--text">
 				<h3>Ford Mondeo</h3>
 				<p>
@@ -87,10 +81,10 @@
 					Výkon: 132 kW<br>
 					Najeto: 5 km
 				</p>
-				<span class="price">949 900 Kč</span>
+				<span class="cena">949 900 Kč</span>
 			</div>
 		</div>
-	<div class="owl-slide" style="background-image: url('../img/3.jpg');">
+	<div class="owl-slide" style="background-image: url('img/3.jpg');">
 			<div class="owl--text">
 				<h3>Ford Kuga</h3>
 				<p>
@@ -100,38 +94,40 @@
 					Výkon: 100 kW<br>
 					Najeto: 227 950 km <br>
 				</p>
-				<span class="price">235 990 Kč</span>
+				<span class="cena">235 990 Kč</span>
 			</div>
 		</div>
 	</div>
 	<section class="nabidka">
 		<div class="container">
-			<h1>Autobazar Ford</h1>
-			<p>Vítejte na stránkách našeho autobazaru. Specializujeme se na značku Škoda</p>
-			<p>Aktuální nabídka značky Škoda. Najděte stovky nových i ojetých aut na prodej na našich webových stránkách. Všechny modely značky Škoda zde.</p>
+			<div class="description">
+				<h1>Autobazar Ford</h1>
+			<p>Vítejte na stránkách našeho autobazaru. Specializujeme se na značku Ford</p>
+			<p>Nabízíme k prodeji použité i nové automobily, zabýváme se taky pojištěním a ověřením původu automobilů Ford</p>
+			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="car">
-						<img src="img/1.jpg" alt="Škoda Octavia" title="Škoda Octavia">
-						<span class="cena">239 000 Kč</span>
-						<span class="name">Škoda Octavia</span>
-						<span>2015, 20 679 km</span>
+						<img src="img/11.jpg" alt="Ford Galaxy" title="Ford Galaxy">
+						<span class="cena">30 000 Kč</span>
+						<span class="name">Ford Galaxy 1998</span>
+						<span>1998, 159 953 km</span>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="car">
-						<img src="img/3.jpg" alt="Škoda Citigo" title="Škoda Citigo">
-						<span class="cena">173 888 Kč</span>
-						<span class="name">Škoda Citigo</span>
-						<span>2010, 121 600 km</span>
+						<img src="img/8.jpg" alt="Ford Focus" title="Ford Focus">
+						<span class="cena">237 000 Kč</span>
+						<span class="name">Ford Focus 2012</span>
+						<span>2012, 100 928 km</span>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="car">
-						<img src="img/2.jpg" alt="Škoda Fabia" title="Škoda Fabia">
-						<span class="cena">265 000 Kč</span>
-						<span class="name">Škoda Fabia</span>
-						<span>2013, 105 000 km</span>
+						<img src="img/4.jpg" alt="Ford Mondeo" title="Ford Mondeo">
+						<span class="cena">670 000 Kč</span>
+						<span class="name">Ford Mondeo 2016</span>						
+						<span>2016, 20 km</span>
 					</div>
 				</div>
 			</div>
@@ -237,5 +233,6 @@
 	</footer>
 	<script src="js/scripts.min.js"></script>
 	<script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/slick-carousel/slick/slick.min.js"></script>
 </body>
 </html>

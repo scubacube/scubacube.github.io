@@ -125,9 +125,35 @@ h1, h2
 
 	&.on span:after 
 		transform: rotate(-45deg) translate(6px, -7px)
+.slider-nav
+	&-container
+		position: relative
+	width: 100%
+	height: auto
+	margin-top: 210px
+	color: #fff
+	font-size: 36px
+	position: absolute
+	z-index: 99
+	div		
+		display: inline-block
+		top: 0
+		left: 60px
+		cursor: pointer
+		height: 40px
+		width: 40px
+		background-size: 60px
+		background-position: center
+		background-repeat: no-repeat
+	.prev
+		float: left
+		background-image: url("../img/arrow_left.png")
+	.next
+		float: right
+		background-image: url("../img/arrow_right.png")
 .owl-carousel 
 	position: relative;
-	height: 80%;
+	height: 450px;
 	
 	div:not(.owl-controls) 
 		height: 100%;
@@ -141,7 +167,7 @@ h1, h2
 	div.owl--text
 		position: absolute;
 		bottom: 2em;
-		left: 2em;
+		left: 3em;
 		// max-width: 16em;
 		max-height: 20em
 		max-width: 25%
@@ -212,6 +238,9 @@ h1, h2
 		font-size: 16px
 		color: #3d788f
 .nabidka
+	text-align: center
+	.description
+		margin-bottom: 55px
 	a 
 		color: #333
 	img
@@ -234,7 +263,24 @@ h1, h2
 		width: 180px
 		img 
 			width: 100%
-
+.seznam
+	margin-bottom: 30px
+h1
+	position: relative
+	margin-bottom: 60px
+	&:after
+		top: 60px;
+		left: 0;
+		right: 0;
+		height: 1em;
+		width: 45px
+		margin: 0 auto
+		border-top: 3px solid #d87a27;
+		position: absolute
+		content: " "
+			
+    		// display: block
+   		
 footer
 	span
 		
@@ -247,5 +293,50 @@ footer
 		color: #d9d9d9
 		&:hover
 			color: #d9d9d9
-
+.contacts
+	padding-bottom: 30px
+	.contact
+		h3
+			margin-top: 0px
+		text-align: center
+		background-color: #d56808	
+		color: #fff
+		padding: 15px 0
+.contacts
+	background-color: #fff
+	.map
+		overflow: hidden
+		padding-bottom: 56.25%
+		position: relative
+		height: 0
+		margin-top: 28px
+	.map iframe
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		position: absolute
+	input
+		width: 100%
+		display: block
+		border: 1px solid #CCCCCC !important
+	textarea
+		width: 100%
+		border: 1px solid #CCCCCC !important
+	.form
+		span
+			display: block
+	.button-wrap
+		color: #fff
+	.button
+		width: 100%	
+		padding: 10px 35px
+		background-color: #3498db
+		-webkit-transition: all .25s
+		transition: all .25s
+		border: none
+		outline: 0
+		
+	.adress
+		margin-top: 30px
 @import "media" // Всегда в конце

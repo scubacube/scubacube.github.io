@@ -1,7 +1,7 @@
 $(function() {
-
+	var owl = $("#owl-example");
 	$("#owl-example").owlCarousel({
-		navigation : false,
+		nav : false,
 		dots : false, 
       	slideSpeed : 300,
      	paginationSpeed : 400,
@@ -11,6 +11,13 @@ $(function() {
 		loop: true,
 		items: 1
 	});
+	$(".next").click(function(){
+		owl.trigger('next.owl.carousel');
+	})
+	$(".prev").click(function(){
+		owl.trigger('prev.owl.carousel');
+	})
+
 	$(".toggle-mnu").click(function() {
 	$(this).toggleClass("on");
 	$(".nav-mobile").slideToggle();
